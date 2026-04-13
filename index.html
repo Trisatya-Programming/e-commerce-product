@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Batik Nusantara Modern | The Digital Loom</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;family=Manrope:wght@200..800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="/sc/css/style.css">
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-secondary": "#ffffff",
+                        "surface-container-highest": "#e8e2d8",
+                        "outline": "#897268",
+                        "on-tertiary-fixed": "#001f29",
+                        "surface-container-low": "#faf3e9",
+                        "on-primary-fixed-variant": "#7a3000",
+                        "on-tertiary-container": "#fafdff",
+                        "tertiary-fixed": "#b9eaff",
+                        "error-container": "#ffdad6",
+                        "on-primary": "#ffffff",
+                        "secondary-fixed": "#b1f0ce",
+                        "on-secondary-fixed": "#002114",
+                        "inverse-primary": "#ffb693",
+                        "on-error-container": "#93000a",
+                        "on-error": "#ffffff",
+                        "on-surface": "#1e1b16",
+                        "tertiary-fixed-dim": "#70d3f7",
+                        "tertiary-container": "#007f9e",
+                        "secondary-container": "#aeeecb",
+                        "surface-variant": "#e8e2d8",
+                        "surface-tint": "#9c440f",
+                        "primary": "#99420d",
+                        "primary-container": "#b95925",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-dim": "#e0d9d0",
+                        "on-primary-fixed": "#351000",
+                        "on-secondary-container": "#316e52",
+                        "primary-fixed-dim": "#ffb693",
+                        "surface": "#fff8f0",
+                        "on-tertiary-fixed-variant": "#004d61",
+                        "on-primary-container": "#fffbff",
+                        "inverse-on-surface": "#f7f0e6",
+                        "on-tertiary": "#ffffff",
+                        "on-secondary-fixed-variant": "#0e5138",
+                        "inverse-surface": "#33302a",
+                        "tertiary": "#00647d",
+                        "background": "#fff8f0",
+                        "on-surface-variant": "#56433a",
+                        "surface-container": "#f4ede3",
+                        "error": "#ba1a1a",
+                        "surface-bright": "#fff8f0",
+                        "on-background": "#1e1b16",
+                        "secondary": "#2c694e",
+                        "primary-fixed": "#ffdbcc",
+                        "outline-variant": "#dcc1b5",
+                        "secondary-fixed-dim": "#95d4b3",
+                        "surface-container-high": "#eee7dd"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "fontFamily": {
+                        "headline": ["Newsreader"],
+                        "body": ["Manrope"],
+                        "label": ["Manrope"]
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-background text-on-surface font-body selection:bg-primary-fixed selection:text-on-primary-fixed">
+<!-- Announcement Bar -->
+<div class="bg-secondary text-on-secondary py-3 text-center">
+<p class="font-label text-[10px] uppercase tracking-[0.2em] font-medium">Free Shipping on orders over Rp 500k!</p>
+</div>
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-stone-50/80 dark:bg-stone-950/80 backdrop-blur-xl shadow-sm shadow-stone-900/5 h-20 transition-all duration-300">
+<nav class="flex justify-between items-center px-8 h-full max-w-screen-2xl mx-auto">
+<!-- Brand Logo -->
+<a class="text-2xl font-serif italic text-stone-900 dark:text-stone-100" href="#">Batik Nusantara Modern</a>
+<!-- Navigation Links -->
+<div class="hidden md:flex gap-10">
+<a class="font-sans text-[11px] uppercase tracking-wider text-orange-900 dark:text-orange-300 border-b-2 border-orange-800 dark:border-orange-500 pb-1 hover:opacity-80 transition-all duration-300" href="index.html">Heritage</a>
+<a class="font-sans text-[11px] uppercase tracking-wider text-stone-600 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-200 hover:opacity-80 transition-all duration-300" href="new_arrivals.html">New Arrivals</a>
+<a class="font-sans text-[11px] uppercase tracking-wider text-stone-600 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-200 hover:opacity-80 transition-all duration-300" href="#">Curated</a>
+<a class="font-sans text-[11px] uppercase tracking-wider text-stone-600 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-200 hover:opacity-80 transition-all duration-300" href="#">Custom</a>
+<a class="font-sans text-[11px] uppercase tracking-wider text-stone-600 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-200 hover:opacity-80 transition-all duration-300" href="#">Artisans</a>
+</div>
+<!-- Trailing Icons -->
+<div class="flex items-center gap-6">
+<button class="text-stone-600 dark:text-stone-400 hover:text-stone-900 active:scale-95 duration-150">
+<span class="material-symbols-outlined" data-icon="search">search</span>
+</button>
+<button class="text-stone-600 dark:text-stone-400 hover:text-stone-900 active:scale-95 duration-150 relative">
+<span class="material-symbols-outlined" data-icon="shopping_cart">shopping_cart</span>
+<span class="absolute -top-1 -right-1 bg-primary text-[8px] text-white rounded-full w-4 h-4 flex items-center justify-center font-bold">2</span>
+</button>
+<button class="text-stone-600 dark:text-stone-400 hover:text-stone-900 active:scale-95 duration-150">
+<span class="material-symbols-outlined" data-icon="person">person</span>
+</button>
+</div>
+</nav>
+</header>
+<main class="mt-20">
+<!-- Hero Carousel Section -->
+<section class="relative h-[921px] w-full overflow-hidden flex items-center">
+<div class="absolute inset-0 z-0">
+<img class="w-full h-full object-cover scale-105" data-alt="high-fashion model wearing contemporary silk batik dress with intricate soga patterns in a minimalist architectural setting with soft dramatic lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCIjZcINbRBucL_aRhP35VD_m2ANasKIgN_2LkcOlotmA6ZnAIQd7-pbYTW8Ta3AIojB-4UWoaRF68UUL6TJnTj7LcGmw93EKOMaPr52HuqAbdWLzOnG1JGA0yQPbf021cl56m4wmQMFx8OnbZA5V9CNh_MScIueGPDACX7ZdSxdPSxIWK8SX9KeTnysU6Xik90Um5vy_2T5R9jPif865N8RrDWJImrx_syKDQJ3PRGLrJNQssBA_79lhmyratglad6jQWQdgvYDdQ"/>
+<div class="absolute inset-0 bg-black/20"></div>
+<div class="absolute inset-0 batik-pattern-overlay"></div>
+</div>
+<div class="relative z-10 max-w-screen-2xl mx-auto px-8 w-full">
+<div class="max-w-2xl bg-surface/10 backdrop-blur-md p-12 border-l border-white/20">
+<span class="font-label text-xs uppercase tracking-[0.3em] text-white/90 mb-4 block">Limited Collection</span>
+<h1 class="font-headline text-7xl md:text-8xl text-white italic mb-8 leading-tight">New Collection 2026</h1>
+<p class="font-body text-white/80 text-lg mb-10 max-w-md">Transcending generations with hand-stamped elegance and contemporary silhouettes. A dialogue between the past and the digital future.</p>
+<button class="bg-primary text-on-primary px-10 py-4 rounded-xl font-label text-xs uppercase tracking-widest hover:bg-primary-container transition-all hover:translate-y-[-4px] shadow-xl shadow-primary/20 active:scale-95">
+                        Shop Now
+                    </button>
+</div>
+</div>
+</section>
+<!-- Categories Grid -->
+<section class="py-24 px-8 bg-surface-container-low relative">
+<div class="max-w-7xl mx-auto">
+<div class="flex items-end justify-between mb-16">
+<div>
+<span class="font-label text-[10px] uppercase tracking-widest text-primary mb-2 block">Departments</span>
+<h2 class="font-headline text-4xl text-on-surface">Curated Categories</h2>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Kemeja Batik -->
+<div class="group relative aspect-[3/4] overflow-hidden rounded-lg bg-surface shadow-sm">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Modern tailored men's batik shirt with subtle geometric patterns in terracotta and cream tones against a neutral studio background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCB77Wh7NzoRvs1P2SO7_FHZaLE-75tXG2tGi4zH8YNfQTrikaXZ6iMJX4FUaNr2satsDMiyu9VKY43d7aFCpqM1afgVA6YIFR6SeCJw_9xJ50_jp8Q2V25PaXGIfHdJgNstVCJyrep47p_IKRmx1rANRJZ-GJJYi06j4rDgbf3Qog6J9cjvnbySraWC_KEp6q4KX1KFkg9qEHKpm5u4FfEnNX0hXYdgyXGjAbq3TN8cpaNdJ9711lTGaoExmuBPXzTGIf0vo2GOQs"/>
+<div class="absolute inset-0 bg-gradient-to-t from-on-surface/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+<div class="absolute bottom-8 left-8">
+<h3 class="text-white font-headline text-2xl mb-2 opacity-0 translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-500 delay-100">Kemeja Batik</h3>
+<button class="text-white font-label text-[10px] uppercase tracking-widest border-b border-white/50 pb-1 opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-200">Explore</button>
+</div>
+</div>
+<!-- Dress Batik -->
+<div class="group relative aspect-[3/4] overflow-hidden rounded-lg bg-surface shadow-sm md:translate-y-12">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Avant-garde woman's batik dress with bold traditional motifs blended with modern silhouettes in deep indigo and forest green" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAq2kwYEZyBg8WMtVzU2_yA7jZOG2wK5cDO01KAh4ljJIa1HzrGgGfm3T4Xrmtt6d1vz-x5fMYOqzosZ_iDe6pVzltaXZcybW-TRCDC2CKxMW3daLquPp5-00VE_8POV3vC0zkDr2f2uE03yoxSNq202XP6haErGIEZi9RlTD1T-rRW-yvAaRLYmjGLomgDDaj9RdICMm5vdEmcnv08xGKjtK-TAJn9zu_YMrekIuLsDhQQ2Cxu5qYgd7ITnS0d-cBeR2lv73W0DuU"/>
+<div class="absolute inset-0 bg-gradient-to-t from-on-surface/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+<div class="absolute bottom-8 left-8">
+<h3 class="text-white font-headline text-2xl mb-2 opacity-0 translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-500 delay-100">Dress Batik</h3>
+<button class="text-white font-label text-[10px] uppercase tracking-widest border-b border-white/50 pb-1 opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-200">Explore</button>
+</div>
+</div>
+<!-- Accessories -->
+<div class="group relative aspect-[3/4] overflow-hidden rounded-lg bg-surface shadow-sm">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Collection of premium batik silk scarves and clutch bags featuring intricate hand-painted traditional Indonesian patterns" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBfBcinUCsvZKTeYhcLBYvRRJOAzwVW32hDiFIwuvBkjzgpWiAyLTVsD13AIh4LXWaLuM3hsTcKrtk_OhcxDDoSbv4_U8EhSCYCkZB0P3WnT_uCadHAaWr-L9R8X62wwyt1Qd5XeuoLv-3HaTZG2deI6PM6hynIZ5sFuI0inqePCmac7jqcYNvreRMhXXmbBBFdCwBrZtEgD_h0Pqn5rcgb5dgw5TJstSBHs4fLo-bU2WhFI3PqBYjmBcX8dBDADAzjB-oggjksDpM"/>
+<div class="absolute inset-0 bg-gradient-to-t from-on-surface/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+<div class="absolute bottom-8 left-8">
+<h3 class="text-white font-headline text-2xl mb-2 opacity-0 translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-500 delay-100">Accessories</h3>
+<button class="text-white font-label text-[10px] uppercase tracking-widest border-b border-white/50 pb-1 opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-200">Explore</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Bestsellers Grid -->
+<section class="py-32 px-8 bg-surface">
+<div class="max-w-7xl mx-auto">
+<div class="text-center mb-20">
+<span class="font-label text-[10px] uppercase tracking-[0.4em] text-primary mb-4 block">Essentials</span>
+<h2 class="font-headline text-5xl text-on-surface">The Artisan Bestsellers</h2>
+<div class="w-24 h-1 bg-outline-variant/30 mx-auto mt-8"></div>
+</div>
+<div class="grid grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-16">
+<!-- Product Card 1 -->
+<div class="group cursor-pointer">
+<div class="relative overflow-hidden mb-6 rounded-lg bg-surface-container-low aspect-[4/5]">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="High-quality close up of a hand-stamped batik shirt on a wooden hanger showing detailed indigo patterns" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAYHFe34QmUnGTWBZeC3tsZw2AY_8BSZ4IakUmooXZ9O4j231o-sWEbjlB8YYb4kR4qwHZGhbl8CWeNwxLWvkM7nacRkfhYO5t_OApbLjuzWadTCY-fRa-TmX_1Cwh_k3_xDbjnApB3oPWKoRQgSZ09JpRNGjyGca4NNG0qQPJhIdgoeCkIOadFV7eYOLwWLlbO_b1xCsaiUx6uQ13umpoPv5LrOT5LN42RRe3_c4KIBCTCC5VntwFHA8Lkd7bTgDOELAhhB3H3WWU"/>
+<div class="absolute top-4 left-4 bg-secondary text-white px-3 py-1 font-label text-[9px] uppercase tracking-widest rounded-full">New Arrival</div>
+<button class="absolute bottom-4 right-4 w-12 h-12 bg-white/90 backdrop-blur rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 translate-y-4 group-hover:translate-y-0 transition-all duration-300">
+<span class="material-symbols-outlined text-primary text-xl" data-icon="add_shopping_cart">add_shopping_cart</span>
+</button>
+</div>
+<h3 class="font-headline text-xl text-on-surface mb-2">Parang Modern Slim-Fit</h3>
+<div class="flex items-center gap-1 mb-2">
+<span class="material-symbols-outlined text-primary text-xs" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-primary text-xs" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-primary text-xs" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-primary text-xs" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-primary text-xs" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-label text-[10px] text-on-surface-variant ml-2">(48 Reviews)</span>
+</div>
+<p class="font-body text-primary font-bold">Rp 850.000</p>
+</div>
+<!-- Product Card 2 -->
+<div class="group cursor-pointer">
+<div class="relative overflow-hidden mb-6 rounded-lg bg-surface-container-low aspect-[4/5]">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Linen batik dress with minimalist floral motifs in earthy terracotta tones, presented in soft natural lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCoL2M0XYemZZbdIPCgKjF-m-bKg4eF8pxTKJX0Te2M2JtSyQaJpwC5Qb_ecE33-hkBAZzszy8o415rzYCc-VpfwgmNX8jqnTwQ1RMDm-qSR3LTFcmqWUcZ-fLoT97QjCOCdDSMgEviM9TdJnCz4L92vsMH4lE1CqRWEg0khxkUt7TRD7idV2IrxCmursJdtSJf53CC5zXXalK5xeZZNIMoHsDzAokU9nhbHi1O1wrR8m7z7SqHTshoUl2DDgGELJ-Z1iiuyODerXo"/>
+<button class="absolute bottom-4 right-4 w-12 h-12 bg-white/90 backdrop-blur rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 translate-y-4 group-hover:translate-y-0 transition-all duration-300">
+<span class="material-symbols-outlined text-primary text-xl" data-icon="add_shopping_cart">add_shopping_cart</span>
+</button>
+</div>
+<h3 class="font-headline text-xl text-on-surface mb-2">Linen Sekar Jagad Dress</h3>
+<div class="flex items-center gap-1 mb-2">
+<span class="material-symbols-outlined text-primary text-xs" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-primary text-xs" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-primary text-xs" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-primary text-xs" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-primary text-xs" style="font-variation-settings: 'FILL' 0;">star</span>
+<span class="font-label text-[10px] text-on-surface-variant ml-2">(32 Reviews)</span>
+</div>
+<p class="font-body text-primary font-bold">Rp 1.200.000</p>
+</div>
+<!-- Product Card 3 -->
+<div class="group cursor-pointer">
+<div class="relative overflow-hidden mb-6 rounded-lg bg-surface-container-low aspect-[4/5]">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Premium batik silk shawl with intricate hand-painted golden details and organic patterns" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDAHEFMsbKYvc5KTQfZw4MJV3Ihy5Yjxq-qBFhei1OI786RUBBCirj0jPiRjLu83uHhM_TTTpChLSmSxeNFWDnGTS0Xs7pyzEasUXCS6LmkQVsUD7mz2Ihekmnt15oi8qSkoYY1o3Pc2NmIYCBdOaT2gV97Ld42lxOZ3NOa7rzwnAVLFK6JkaZreh2gEXVF07lkaCaH0EVA3kEyfYkO8fghDp1IAWbRpe7eYhTN_28JMYcCk-9DxTmWbJ_AXVFRYTG4SOK1eIPpq3E"/>
+<div class="absolute top-4 left-4 bg-primary text-white px-3 py-1 font-label text-[9px] uppercase tracking-widest rounded-full">Limited</div>
+<button class="absolute bottom-4 right-4 w-12 h-12 bg-white/90 backdrop-blur rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 translate-y-4 group-hover:translate-y-0 transition-all duration-300">
+<span class="material-symbols-outlined text-primary text-xl" data-icon="add_shopping_cart">add_shopping_cart</span>
+</button>
+</div>
+<h3 class="font-headline text-xl text-on-surface mb-2">Tulis Heritage Silk Scarf</h3>
+<div class="flex items-center gap-1 mb-2">
+<span class="material-symbols-outlined text-primary text-xs" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-primary text-xs" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-primary text-xs" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-primary text-xs" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-primary text-xs" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-label text-[10px] text-on-surface-variant ml-2">(15 Reviews)</span>
+</div>
+<p class="font-body text-primary font-bold">Rp 2.450.000</p>
+</div>
+<!-- Additional items for 6 products... (Simulated Grid) -->
+<!-- Repeat logic for items 4, 5, 6 as needed for visual layout -->
+</div>
+</div>
+</section>
+<!-- Lifestyle Gallery (Asymmetric Bento Style) -->
+<section class="py-24 px-8 bg-surface-container-high overflow-hidden">
+<div class="max-w-7xl mx-auto">
+<div class="mb-16">
+<h2 class="font-headline text-4xl text-on-surface mb-4">Woven Into the City</h2>
+<p class="font-body text-on-surface-variant max-w-lg">Batik for the modern urbanite. See how our community styles heritage in their daily professional lives.</p>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-4 md:h-[800px]">
+<div class="col-span-2 row-span-2 overflow-hidden rounded-lg">
+<img class="w-full h-full object-cover hover:scale-105 transition-transform duration-1000" data-alt="Young professional in a modern batik blazer standing in front of a sleek urban skyscraper at twilight" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCnXZsMeP_Gd_-RH4ySwguuqLJ8fseEqXsA2i5REZizQ_ulc_PbhSmQjaoHepx716woNXlA12hCtKmKK8-jc0LBlkj_c9cIxLiNmmzjq59wcfDTLPiN7OCpnLBOQb20TKIOnq2mWSQtFRQUCiH35I3F1OgNn6RRghwcyur2otv129Lrc0x0YRbbw4qzBAhrNzb-v6lfBF5rF9DWPC1aJ_a_sIh1Y17-ZOVYJQRWfJ-PqgzkjAOSI4wUEb8305sGJg1mf582MEx9ORo"/>
+</div>
+<div class="col-span-1 row-span-1 overflow-hidden rounded-lg">
+<img class="w-full h-full object-cover hover:scale-105 transition-transform duration-1000" data-alt="Creative professional working in a contemporary cafe wearing a casual batik outer shirt" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDNttR82EEQW9LquFNr4nEkjA-9P9QITkvO_kgkq9weNmpVV39GNvWLEUvMIuDgYHAY38DJNaEJM0lk_3iIKe3rrxYHixQ4m59Ie4byDxgS9qKm-pw7dRltCFQTPKFakzDlZ43tZk732lXPseIN9Atpxzi77dNBtFxSg-I1KfFM0krMZow9PbpO6Rpv2tSbJF4FDfHkxiVKl-hHjahz6ypR7RflruFCVDhccJdAhlvTyNNs7cJ-nYQHHWZAtZ8lg4Js-zY-t9Sjhd0"/>
+</div>
+<div class="col-span-1 row-span-2 overflow-hidden rounded-lg">
+<img class="w-full h-full object-cover hover:scale-105 transition-transform duration-1000" data-alt="Fashionable woman walking through an art gallery in a vibrant batik pleated skirt" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDHh1l9HlIQCU4cisr8vIWD36Fw8z5actl-oIgJQd0o4vv49KO4B7CnD7ZyQiFYqvDHqTudXRX7X7K24oB6QpqNslowAUTmaSE76mVI9lZ_cwvYmdiPNeKabBRErxssnTOdyCK80DJI-JSdEhl8ttdRRVcmiANfRy3rnfphaIyAHA-I1zFxBXF7txvxjLIw9GkL-KeojbhIjl0v42B5WvetHGwhItIeNuRIrJwgOInABxfzvIvDvePD5edoBLgc4BIRuHR8et4pZmY"/>
+</div>
+<div class="col-span-1 row-span-1 overflow-hidden rounded-lg">
+<img class="w-full h-full object-cover hover:scale-105 transition-transform duration-1000" data-alt="Group of diverse young people in modern batik attire celebrating at an outdoor rooftop event" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAKeufq-2_Mc6zqaOhbMSGFSWKoh0R5p8DG9hiXZAZPotlngfyCgsrWjo_K5Z1kSvTiP2aSH25quvD1kadJ7xaPgOAGOFSHGoC91nKWvwHmk9eMgwyybEPrfTsG-CvFxqxuEfBpwjiNUl2bedC4pp2I9ZOWAkRPooyVPJaETzthNrzDZBNqcZs2wlCFcy5pCkEMsj78l3etk7qTcqLQ5LHgEcJ8_Fu05X_rcpnXUXNv3c6lLY-zlQOr1t1yWQ7orIZgzDbtpUZFyWI"/>
+</div>
+</div>
+</div>
+</section>
+<!-- Newsletter Section -->
+<section class="py-32 px-8 bg-surface-container-lowest text-center relative overflow-hidden">
+<div class="absolute inset-0 batik-pattern-overlay scale-150"></div>
+<div class="max-w-2xl mx-auto relative z-10">
+<span class="font-label text-[10px] uppercase tracking-[0.4em] text-primary mb-6 block">Stay Connected</span>
+<h2 class="font-headline text-5xl text-on-surface mb-6">Join the Modern Heritage</h2>
+<p class="font-body text-on-surface-variant mb-12">Receive exclusive access to new collection launches, artisan stories, and heritage styling guides.</p>
+<form class="flex flex-col md:flex-row gap-4">
+<div class="flex-grow relative">
+<input class="w-full bg-surface-container-low border-0 border-b-2 border-outline-variant focus:border-primary focus:ring-0 px-4 py-4 text-on-surface placeholder:text-stone-400 transition-colors" placeholder="Your email address" type="email"/>
+</div>
+<button class="bg-secondary text-on-secondary px-12 py-4 rounded-xl font-label text-xs uppercase tracking-widest hover:opacity-90 active:scale-95 transition-all" type="submit">
+                        Subscribe
+                    </button>
+</form>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-stone-100 dark:bg-stone-900 w-full py-16 px-8">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 max-w-7xl mx-auto">
+<div class="col-span-1 md:col-span-1">
+<a class="text-xl font-serif text-stone-800 dark:text-stone-200 block mb-6" href="#">Batik Nusantara Modern</a>
+<p class="font-sans text-xs uppercase tracking-widest text-stone-500 leading-loose">
+                    Blending Indonesian heritage with contemporary soul. Every thread tells a story of identity and craft.
+                </p>
+</div>
+<div>
+<h4 class="font-label text-xs uppercase tracking-widest text-stone-900 mb-6 font-bold">Brand</h4>
+<ul class="space-y-4">
+<li><a class="font-sans text-xs uppercase tracking-widest text-stone-500 hover:text-orange-800 dark:hover:text-orange-400 underline underline-offset-4 transition-all duration-300" href="#">The Loom Story</a></li>
+<li><a class="font-sans text-xs uppercase tracking-widest text-stone-500 hover:text-orange-800 dark:hover:text-orange-400 underline underline-offset-4 transition-all duration-300" href="#">Artisan Directory</a></li>
+<li><a class="font-sans text-xs uppercase tracking-widest text-stone-500 hover:text-orange-800 dark:hover:text-orange-400 underline underline-offset-4 transition-all duration-300" href="#">Sustainability</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-label text-xs uppercase tracking-widest text-stone-900 mb-6 font-bold">Service</h4>
+<ul class="space-y-4">
+<li><a class="font-sans text-xs uppercase tracking-widest text-stone-500 hover:text-orange-800 dark:hover:text-orange-400 underline underline-offset-4 transition-all duration-300" href="#">Shipping &amp; Returns</a></li>
+<li><a class="font-sans text-xs uppercase tracking-widest text-stone-500 hover:text-orange-800 dark:hover:text-orange-400 underline underline-offset-4 transition-all duration-300" href="#">Care Guide</a></li>
+<li><a class="font-sans text-xs uppercase tracking-widest text-stone-500 hover:text-orange-800 dark:hover:text-orange-400 underline underline-offset-4 transition-all duration-300" href="#">Privacy Policy</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-label text-xs uppercase tracking-widest text-stone-900 mb-6 font-bold">Follow</h4>
+<div class="flex gap-6">
+<a class="text-stone-500 hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined" data-icon="share">share</span></a>
+<a class="text-stone-500 hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined" data-icon="photo_camera">photo_camera</span></a>
+<a class="text-stone-500 hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined" data-icon="mail">mail</span></a>
+</div>
+</div>
+</div>
+<div class="max-w-7xl mx-auto border-t border-stone-200 mt-16 pt-8 text-center">
+<p class="font-sans text-xs uppercase tracking-widest text-stone-500">© 2024 Batik Nusantara Modern. Crafted with Soul.</p>
+</div>
+</footer>
+</body></html>

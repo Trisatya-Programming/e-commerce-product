@@ -1,0 +1,9 @@
+    body { font-family: 'Manrope', sans-serif; background-color: #fff8f0; color: #1e1b16; }
+.font-serif { font-family: 'Newsreader', serif; }
+.material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24; }
+.active-nav-border { position: relative; }
+.active-nav-border::after { content: ''; position: absolute; bottom: -4px; left: 0; width: 100%; height: 2px; background-color: #99420d; }
+.batik-pattern-overlay {
+    background-image: url(https://lh3.googleusercontent.com/aida-public/AB6AXuD0wAFluCH8NYqQ4hrykxwuUL3HpTwuIqeME6De32a2XdFgVJRGbh8u0x06YtbEIW_dtKODSLdxzHEU8rmhHHQV0p7sN8-6ktBxE2lr18fDjX8BRbXmz0s-tqksg-JrIXjl18WwDb5YxN34QJZU01_G_K2NLtQEUIcQjIH7_ZLFmEHkgrQHVjh_aLMERTycW1mXc5bhTUEpJNkousgUH4vzV3Bz8-zu2zEYndJSppjAHe-ro87XYcyAVoy4uJEpex5x8VkhIbe5DXI);
+    opacity: 0.03
+    }
